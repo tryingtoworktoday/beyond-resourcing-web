@@ -1,43 +1,52 @@
-export default function IconStrip() {
+export default function Page() {
   return (
-    <svg
-      width="180"
-      height="40"
-      viewBox="0 0 180 40"
-      xmlns="http://www.w3.org/2000/svg"
+    <main
+      style={{
+        minHeight: "100vh",
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        justifyContent: "flex-start",
+        paddingTop: "48px",
+        fontFamily:
+          "-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif",
+      }}
     >
-      {/* Left circle */}
-      <circle cx="20" cy="20" r="16" stroke="#0f172a" strokeWidth="2" fill="white" />
-      <path
-        d="M20 26s-6-4.2-6-8.4a4 4 0 0 1 7-2.5 4 4 0 0 1 7 2.5C28 21.8 20 26 20 26z"
-        fill="#ef4444"
-      />
+      {/* ICON STRIP — EXACT FIGMA SVG */}
+      {/* PASTE THE SVG YOU COPIED FROM FIGMA BELOW */}
+      {/* DO NOT ADD OR REMOVE ANYTHING INSIDE THE SVG */}
 
-      {/* Line */}
-      <line x1="36" y1="20" x2="76" y2="20" stroke="#0f172a" strokeWidth="2" />
+      <svg
+        width="180"
+        height="40"
+        viewBox="0 0 180 40"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <!-- ⬇️ REPLACE THIS COMMENT WITH YOUR COPIED SVG CONTENT ⬇️ -->
+      </svg>
 
-      {/* Middle circle */}
-      <circle cx="90" cy="20" r="16" stroke="#0f172a" strokeWidth="2" fill="white" />
-      <path
-        d="M84 20l4 4 8-8"
-        stroke="#2563eb"
-        strokeWidth="2"
-        fill="none"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
+      {/* TITLE */}
+      <h1
+        style={{
+          marginTop: "24px",
+          fontSize: "32px",
+          fontWeight: 600,
+          color: "#0f172a",
+        }}
+      >
+        Beyond Resourcing
+      </h1>
 
-      {/* Line */}
-      <line x1="106" y1="20" x2="146" y2="20" stroke="#0f172a" strokeWidth="2" />
-
-      {/* Right circle */}
-      <circle cx="160" cy="20" r="16" stroke="#0f172a" strokeWidth="2" fill="white" />
-      <path
-        d="M154 14h8l4 4v8a2 2 0 0 1-2 2h-10a2 2 0 0 1-2-2v-10a2 2 0 0 1 2-2z"
-        stroke="#22c55e"
-        strokeWidth="2"
-        fill="none"
-      />
-    </svg>
+      {/* SUBTITLE */}
+      <p
+        style={{
+          marginTop: "8px",
+          fontSize: "16px",
+          color: "#64748b",
+        }}
+      >
+        Everything you need at your fingertips
+      </p>
+    </main>
   );
 }
