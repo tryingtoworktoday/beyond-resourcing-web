@@ -7,10 +7,11 @@ export default function Page() {
         alignItems: "center",
         justifyContent: "center",
         background: "white",
+        fontFamily: "system-ui, -apple-system, BlinkMacSystemFont",
       }}
     >
-      <div style={{ textAlign: "center" }}>
-        {/* ICON STRIP — HARD FIXED */}
+      <div style={{ width: "360px", textAlign: "center" }}>
+        {/* ICON STRIP — INLINE, JOINED */}
         <svg
           width="180"
           height="40"
@@ -55,8 +56,82 @@ export default function Page() {
           Beyond Resourcing
         </h1>
 
-        <p style={{ color: "#6b7280" }}>
+        <p style={{ color: "#6b7280", marginBottom: "24px" }}>
           Everything you need at your fingertips
+        </p>
+
+        {/* EMAIL */}
+        <div style={{ textAlign: "left", marginBottom: "12px" }}>
+          <label style={{ fontSize: "14px", color: "#374151" }}>
+            Email address
+          </label>
+          <input
+            type="email"
+            placeholder="you@example.com"
+            style={{
+              width: "100%",
+              padding: "12px",
+              marginTop: "6px",
+              borderRadius: "8px",
+              border: "1px solid #d1d5db",
+              fontSize: "14px",
+            }}
+          />
+        </div>
+
+        <button
+          style={{
+            width: "100%",
+            padding: "12px",
+            background: "#2563eb",
+            color: "white",
+            borderRadius: "8px",
+            fontWeight: 600,
+            border: "none",
+            marginBottom: "16px",
+            cursor: "pointer",
+          }}
+        >
+          Continue with Email
+        </button>
+
+        <div style={{ display: "flex", alignItems: "center", marginBottom: "16px" }}>
+          <div style={{ flex: 1, height: "1px", background: "#e5e7eb" }} />
+          <span style={{ margin: "0 12px", fontSize: "12px", color: "#6b7280" }}>
+            Or continue with
+          </span>
+          <div style={{ flex: 1, height: "1px", background: "#e5e7eb" }} />
+        </div>
+
+        <button
+          style={{
+            width: "100%",
+            padding: "12px",
+            borderRadius: "8px",
+            border: "1px solid #d1d5db",
+            background: "white",
+            marginBottom: "10px",
+            cursor: "pointer",
+          }}
+        >
+          Continue with Google
+        </button>
+
+        <button
+          style={{
+            width: "100%",
+            padding: "12px",
+            borderRadius: "8px",
+            border: "1px solid #d1d5db",
+            background: "white",
+            cursor: "pointer",
+          }}
+        >
+          Continue with Apple
+        </button>
+
+        <p style={{ fontSize: "12px", color: "#9ca3af", marginTop: "20px" }}>
+          Invite-only access. Accounts must be approved.
         </p>
       </div>
     </main>
