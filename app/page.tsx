@@ -1,5 +1,5 @@
 // app/page.tsx
-import IconStrip from "./IconStrip";
+import IconStrip from "../components/ui/IconStrip";
 
 export default function Home() {
   return (
