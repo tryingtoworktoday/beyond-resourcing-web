@@ -6,7 +6,6 @@ import { Heart, Mail, FileText, Eye, Plus, Mic, Camera, Search, User } from 'luc
 export default function BeyondResourcing() {
   const [email, setEmail] = useState('');
   const [currentPage, setCurrentPage] = useState('login');
-  const [searchQuery, setSearchQuery] = useState('');
 
   if (currentPage === 'login') {
     return (
@@ -106,46 +105,37 @@ export default function BeyondResourcing() {
         </div>
       </nav>
 
-      <div className="flex flex-col items-center justify-center pt-20 px-4">
-        <div className="flex justify-center items-center mb-10">
+      <div className="flex flex-col items-center pt-24 px-4">
+        {/* Icon row */}
+        <div className="flex justify-center items-center mb-8">
           <div className="flex items-center">
-            <div className="relative z-10 w-12 h-12 rounded-full border-2 border-gray-900 bg-white flex items-center justify-center">
+            <div className="w-12 h-12 rounded-full border-2 border-gray-900 bg-white flex items-center justify-center">
               <Heart className="w-5 h-5 text-red-500" />
             </div>
             <div className="w-8 h-0.5 bg-gray-900"></div>
-            <div className="relative z-10 w-12 h-12 rounded-full border-2 border-gray-900 bg-white flex items-center justify-center">
+            <div className="w-12 h-12 rounded-full border-2 border-gray-900 bg-white flex items-center justify-center">
               <Mail className="w-5 h-5 text-blue-500" />
             </div>
             <div className="w-8 h-0.5 bg-gray-900"></div>
-            <div className="relative z-10 w-12 h-12 rounded-full border-2 border-gray-900 bg-white flex items-center justify-center">
+            <div className="w-12 h-12 rounded-full border-2 border-gray-900 bg-white flex items-center justify-center">
               <FileText className="w-5 h-5 text-green-500" />
             </div>
           </div>
         </div>
 
+        {/* Title */}
         <div className="text-center mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-2">Beyond Resourcing</h2>
-          <p className="text-gray-500 text-sm">Everything you need at your fingertips</p>
+          <h2 className="text-4xl font-bold text-gray-900 mb-2">Beyond Resourcing</h2>
+          <p className="text-gray-500">Everything you need at your fingertips</p>
         </div>
 
-        <div className="w-full max-w-md">
-          <div className="flex items-center justify-center gap-4 px-4 py-2 border border-gray-300 rounded-full bg-white shadow-sm">
-            <button className="hover:bg-gray-100 rounded-full transition-colors p-1">
-              <Eye className="w-5 h-5 text-blue-600" strokeWidth={2} />
-            </button>
-            <button className="hover:bg-gray-100 rounded-full transition-colors p-1">
-              <Plus className="w-5 h-5 text-red-600" strokeWidth={2} />
-            </button>
-            <button className="hover:bg-gray-100 rounded-full transition-colors p-1">
-              <Mic className="w-5 h-5 text-red-600" strokeWidth={2} />
-            </button>
-            <button className="hover:bg-gray-100 rounded-full transition-colors p-1">
-              <Camera className="w-5 h-5 text-orange-500" strokeWidth={2} />
-            </button>
-            <button className="hover:bg-gray-100 rounded-full transition-colors p-1">
-              <Search className="w-5 h-5 text-gray-900" strokeWidth={2} />
-            </button>
-          </div>
+        {/* Compact search bar */}
+        <div className="inline-flex items-center gap-6 px-6 py-2.5 border border-gray-300 rounded-full bg-white">
+          <Eye className="w-5 h-5 text-blue-600" strokeWidth={2} />
+          <Plus className="w-5 h-5 text-red-600" strokeWidth={2} />
+          <Mic className="w-5 h-5 text-red-600" strokeWidth={2} />
+          <Camera className="w-5 h-5 text-orange-500" strokeWidth={2} />
+          <Search className="w-5 h-5 text-gray-900" strokeWidth={2} />
         </div>
       </div>
     </div>
