@@ -97,7 +97,7 @@ export default function BeyondResourcing() {
       <nav className="border-b border-gray-200 px-6 py-4">
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <h1 className="text-xl font-bold text-gray-900">Beyond Resourcing</h1>
+            <h1 className="text-lg font-bold text-gray-900">Beyond Resourcing</h1>
             <span className="text-blue-600 text-sm">A Productive You</span>
           </div>
           <button className="p-2 hover:bg-gray-100 rounded-full transition-colors">
@@ -107,50 +107,43 @@ export default function BeyondResourcing() {
       </nav>
 
       <div className="flex flex-col items-center justify-center pt-20 px-4">
-        <div className="flex justify-center items-center mb-12">
+        <div className="flex justify-center items-center mb-10">
           <div className="flex items-center">
             <div className="relative z-10 w-12 h-12 rounded-full border-2 border-gray-900 bg-white flex items-center justify-center">
-              <Heart className="w-5 h-5 text-gray-900" />
+              <Heart className="w-5 h-5 text-red-500" />
             </div>
             <div className="w-8 h-0.5 bg-gray-900"></div>
             <div className="relative z-10 w-12 h-12 rounded-full border-2 border-gray-900 bg-white flex items-center justify-center">
-              <Mail className="w-5 h-5 text-gray-900" />
+              <Mail className="w-5 h-5 text-blue-500" />
             </div>
             <div className="w-8 h-0.5 bg-gray-900"></div>
             <div className="relative z-10 w-12 h-12 rounded-full border-2 border-gray-900 bg-white flex items-center justify-center">
-              <FileText className="w-5 h-5 text-gray-900" />
+              <FileText className="w-5 h-5 text-green-500" />
             </div>
           </div>
         </div>
 
-        <div className="text-center mb-10">
+        <div className="text-center mb-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-2">Beyond Resourcing</h2>
           <p className="text-gray-500 text-sm">Everything you need at your fingertips</p>
         </div>
 
-        <div className="w-full max-w-2xl">
-          <div className="flex items-center gap-3 px-6 py-3 border-2 border-gray-300 rounded-full bg-white">
-            <button className="p-1 hover:bg-gray-100 rounded-full transition-colors">
-              <Eye className="w-5 h-5 text-blue-600" />
+        <div className="w-full max-w-md">
+          <div className="flex items-center justify-center gap-4 px-4 py-2 border border-gray-300 rounded-full bg-white shadow-sm">
+            <button className="hover:bg-gray-100 rounded-full transition-colors p-1">
+              <Eye className="w-5 h-5 text-blue-600" strokeWidth={2} />
             </button>
-            <button className="p-1 hover:bg-gray-100 rounded-full transition-colors">
-              <Plus className="w-5 h-5 text-red-600" />
+            <button className="hover:bg-gray-100 rounded-full transition-colors p-1">
+              <Plus className="w-5 h-5 text-red-600" strokeWidth={2} />
             </button>
-            <button className="p-1 hover:bg-gray-100 rounded-full transition-colors">
-              <Mic className="w-5 h-5 text-red-600" />
+            <button className="hover:bg-gray-100 rounded-full transition-colors p-1">
+              <Mic className="w-5 h-5 text-red-600" strokeWidth={2} />
             </button>
-            <button className="p-1 hover:bg-gray-100 rounded-full transition-colors">
-              <Camera className="w-5 h-5 text-orange-500" />
+            <button className="hover:bg-gray-100 rounded-full transition-colors p-1">
+              <Camera className="w-5 h-5 text-orange-500" strokeWidth={2} />
             </button>
-            <input
-              type="text"
-              value={searchQuery}
-              onChange={(e) => setSearchQuery(e.target.value)}
-              className="flex-1 outline-none text-gray-700"
-              placeholder=""
-            />
-            <button className="p-1 hover:bg-gray-100 rounded-full transition-colors">
-              <Search className="w-5 h-5 text-gray-700" />
+            <button className="hover:bg-gray-100 rounded-full transition-colors p-1">
+              <Search className="w-5 h-5 text-gray-900" strokeWidth={2} />
             </button>
           </div>
         </div>
