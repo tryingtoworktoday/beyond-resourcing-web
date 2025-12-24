@@ -1,7 +1,6 @@
 'use client';
 
 import React, { useState } from 'react';
-import { Heart, Mail, FileText, Eye, Plus, Mic, Camera, Search, User } from 'lucide-react';
 
 export default function BeyondResourcing() {
   const [email, setEmail] = useState('');
@@ -15,15 +14,21 @@ export default function BeyondResourcing() {
           <div className="flex justify-center items-center mb-12">
             <div className="flex items-center">
               <div className="relative z-10 w-12 h-12 rounded-full border-2 border-gray-900 bg-white flex items-center justify-center">
-                <Heart className="w-5 h-5 text-red-500" />
+                <svg className="w-5 h-5 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                </svg>
               </div>
               <div className="w-8 h-0.5 bg-gray-900"></div>
               <div className="relative z-10 w-12 h-12 rounded-full border-2 border-gray-900 bg-white flex items-center justify-center">
-                <Mail className="w-5 h-5 text-blue-500" />
+                <svg className="w-5 h-5 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                </svg>
               </div>
               <div className="w-8 h-0.5 bg-gray-900"></div>
               <div className="relative z-10 w-12 h-12 rounded-full border-2 border-gray-900 bg-white flex items-center justify-center">
-                <FileText className="w-5 h-5 text-green-500" />
+                <svg className="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                </svg>
               </div>
             </div>
           </div>
@@ -49,7 +54,9 @@ export default function BeyondResourcing() {
             onClick={() => setCurrentPage('home')}
             className="w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-2.5 px-4 rounded-lg transition-colors flex items-center justify-center gap-2 mb-6"
           >
-            <Mail className="w-4 h-4" />
+            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+            </svg>
             Continue with Email
           </button>
 
@@ -101,7 +108,9 @@ export default function BeyondResourcing() {
             <span className="text-blue-600 text-sm">A Productive You</span>
           </div>
           <button className="p-2 hover:bg-gray-100 rounded-full transition-colors">
-            <User className="w-5 h-5 text-gray-700" />
+            <svg className="w-5 h-5 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+            </svg>
           </button>
         </div>
       </nav>
@@ -110,15 +119,21 @@ export default function BeyondResourcing() {
         <div className="flex justify-center items-center mb-12">
           <div className="flex items-center">
             <div className="relative z-10 w-12 h-12 rounded-full border-2 border-gray-900 bg-white flex items-center justify-center">
-              <Heart className="w-5 h-5 text-gray-900" />
+              <svg className="w-5 h-5 text-gray-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+              </svg>
             </div>
             <div className="w-8 h-0.5 bg-gray-900"></div>
             <div className="relative z-10 w-12 h-12 rounded-full border-2 border-gray-900 bg-white flex items-center justify-center">
-              <Mail className="w-5 h-5 text-gray-900" />
+              <svg className="w-5 h-5 text-gray-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+              </svg>
             </div>
             <div className="w-8 h-0.5 bg-gray-900"></div>
             <div className="relative z-10 w-12 h-12 rounded-full border-2 border-gray-900 bg-white flex items-center justify-center">
-              <FileText className="w-5 h-5 text-gray-900" />
+              <svg className="w-5 h-5 text-gray-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+              </svg>
             </div>
           </div>
         </div>
@@ -131,16 +146,26 @@ export default function BeyondResourcing() {
         <div className="w-full max-w-2xl">
           <div className="flex items-center gap-3 px-6 py-3 border-2 border-gray-300 rounded-full bg-white">
             <button className="p-1 hover:bg-gray-100 rounded-full transition-colors">
-              <Eye className="w-5 h-5 text-blue-600" />
+              <svg className="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+              </svg>
             </button>
             <button className="p-1 hover:bg-gray-100 rounded-full transition-colors">
-              <Plus className="w-5 h-5 text-red-600" />
+              <svg className="w-5 h-5 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
+              </svg>
             </button>
             <button className="p-1 hover:bg-gray-100 rounded-full transition-colors">
-              <Mic className="w-5 h-5 text-red-600" />
+              <svg className="w-5 h-5 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z" />
+              </svg>
             </button>
             <button className="p-1 hover:bg-gray-100 rounded-full transition-colors">
-              <Camera className="w-5 h-5 text-orange-500" />
+              <svg className="w-5 h-5 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" />
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 13a3 3 0 11-6 0 3 3 0 016 0z" />
+              </svg>
             </button>
             <input
               type="text"
@@ -150,7 +175,9 @@ export default function BeyondResourcing() {
               placeholder=""
             />
             <button className="p-1 hover:bg-gray-100 rounded-full transition-colors">
-              <Search className="w-5 h-5 text-gray-700" />
+              <svg className="w-5 h-5 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+              </svg>
             </button>
           </div>
         </div>
