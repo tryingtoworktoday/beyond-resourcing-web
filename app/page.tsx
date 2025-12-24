@@ -127,12 +127,12 @@ export default function BeyondResourcing() {
           <p className="text-gray-500">Everything you need at your fingertips</p>
         </div>
 
-        <div style={{ display: 'flex', alignItems: 'center', gap: '32px', padding: '12px 32px', border: '1px solid #d1d5db', borderRadius: '9999px', backgroundColor: 'white' }}>
-          <Eye style={{ width: '20px', height: '20px', color: '#2563eb', strokeWidth: 2 }} />
-          <Plus style={{ width: '20px', height: '20px', color: '#dc2626', strokeWidth: 2 }} />
-          <Mic style={{ width: '20px', height: '20px', color: '#dc2626', strokeWidth: 2 }} />
-          <Camera style={{ width: '20px', height: '20px', color: '#f97316', strokeWidth: 2 }} />
-          <Search style={{ width: '20px', height: '20px', color: '#111827', strokeWidth: 2 }} />
+        <div className="w-80 flex items-center justify-between px-8 py-3 border border-gray-300 rounded-full bg-white shadow-sm">
+          <Eye className="w-5 h-5 text-blue-600" strokeWidth={2} />
+          <Plus className="w-5 h-5 text-red-600" strokeWidth={2} />
+          <Mic className="w-5 h-5 text-red-600" strokeWidth={2} />
+          <Camera className="w-5 h-5 text-orange-500" strokeWidth={2} />
+          <Search className="w-5 h-5 text-gray-900" strokeWidth={2} />
         </div>
       </div>
     </div>
